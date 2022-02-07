@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.5)
+  - KTVCocoaHTTPServer (1.0.0):
+    - CocoaAsyncSocket
+  - KTVHTTPCache (2.0.1):
+    - KTVCocoaHTTPServer
+  - Masonry (1.1.0)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - ZFPlayer (4.0.3):
+    - ZFPlayer/Core (= 4.0.3)
+  - ZFPlayer/ControlView (4.0.3):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (4.0.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - KTVHTTPCache
+  - Masonry
+  - SDWebImage
+  - ZFPlayer
+  - ZFPlayer/ControlView
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CocoaAsyncSocket
+    - KTVCocoaHTTPServer
+    - KTVHTTPCache
+    - Masonry
+    - SDWebImage
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  KTVCocoaHTTPServer: df8d7b861e603ff8037e9b2138aca2563a6b768d
+  KTVHTTPCache: 588c3eb16f6bd1e6fde1e230dabfb7bd4e490a4d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  ZFPlayer: 624c92de06eb34df322c3b53b4c9ce760f528f7a
+
+PODFILE CHECKSUM: 219db045aa6a3729a637ea69d93c85f5a8089828
+
+COCOAPODS: 1.11.2
