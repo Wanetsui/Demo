@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "WaterFallLayoutViewController.h"
 #import "FlowLayoutViewController.h"
+#import "SplashView.h"
 //#import "FlowLayoutViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -41,7 +42,12 @@
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
 	self.window.rootViewController = navigationController;
 	[self.window makeKeyAndVisible];
-
+    
+    [self.window addSubview:({
+        SplashView *splashView = [[SplashView alloc] initWithFrame:self.window.bounds];
+        splashView;
+    })];
+    
 	return YES;
 }
 
