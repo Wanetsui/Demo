@@ -29,6 +29,9 @@
 		3A88FFFC279EB10D002FE367 /* PreLoaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */; };
 		3A88FFFF279EB165002FE367 /* LayerAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */; };
 		3A91833A27B3990400E8F634 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91833927B3990400E8F634 /* SplashView.m */; };
+		3A91833D27B3A1E400E8F634 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91833C27B3A1E400E8F634 /* TencentOpenAPI.framework */; };
+		3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834027B3A2AE00E8F634 /* MineViewController.m */; };
+		3A91834427B3A2DE00E8F634 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834327B3A2DE00E8F634 /* Login.m */; };
 		3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96826B279957E400290C9D /* FlowLayoutViewController.m */; };
 		3A96827227998A8300290C9D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96827127998A8300290C9D /* CoverView.m */; };
 		3A9682752799993E00290C9D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682742799993E00290C9D /* ListLoader.m */; };
@@ -99,6 +102,11 @@
 		3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAttributeManager.m; sourceTree = "<group>"; };
 		3A91833827B3990400E8F634 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
 		3A91833927B3990400E8F634 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
+		3A91833C27B3A1E400E8F634 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		3A91833F27B3A2AE00E8F634 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		3A91834027B3A2AE00E8F634 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		3A91834227B3A2DE00E8F634 /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		3A91834327B3A2DE00E8F634 /* Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		3A96826A279957E400290C9D /* FlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutViewController.h; sourceTree = "<group>"; };
 		3A96826B279957E400290C9D /* FlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutViewController.m; sourceTree = "<group>"; };
 		3A96827027998A8300290C9D /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
@@ -127,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8E90EBD5AFC54ED5DDFB57 /* libPods-Demo.a in Frameworks */,
+				3A91833D27B3A1E400E8F634 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +193,8 @@
 		3A6A797527931AFF00557C7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A91833E27B3A27E00E8F634 /* MineController */,
+				3A91833B27B3A1AE00E8F634 /* Framework */,
 				3A91833727B398B100E8F634 /* Utils */,
 				3A982AF9279FAA34004B3444 /* icon.bundle */,
 				3A88FFEC279EA94A002FE367 /* Player */,
@@ -243,6 +254,25 @@
 				3A91833927B3990400E8F634 /* SplashView.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A91833B27B3A1AE00E8F634 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3A91833C27B3A1E400E8F634 /* TencentOpenAPI.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		3A91833E27B3A27E00E8F634 /* MineController */ = {
+			isa = PBXGroup;
+			children = (
+				3A91833F27B3A2AE00E8F634 /* MineViewController.h */,
+				3A91834027B3A2AE00E8F634 /* MineViewController.m */,
+				3A91834227B3A2DE00E8F634 /* Login.h */,
+				3A91834327B3A2DE00E8F634 /* Login.m */,
+			);
+			path = MineController;
 			sourceTree = "<group>";
 		};
 		3A96827F279ABFEE00290C9D /* Model */ = {
@@ -530,6 +560,8 @@
 				3A88FFF9279EAF21002FE367 /* ZFKSControlView.m in Sources */,
 				3A9682752799993E00290C9D /* ListLoader.m in Sources */,
 				3A91833A27B3990400E8F634 /* SplashView.m in Sources */,
+				3A91834427B3A2DE00E8F634 /* Login.m in Sources */,
+				3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */,
 				3A6A797827931AFF00557C7F /* AppDelegate.m in Sources */,
 				3A88FFE2279E9FE4002FE367 /* WaterFallLayout.m in Sources */,
 				3A6A798427931AFF00557C7F /* Demo.xcdatamodeld in Sources */,
@@ -716,6 +748,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XG3ZW459W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/Framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -748,6 +784,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XG3ZW459W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/Framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
