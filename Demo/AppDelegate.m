@@ -12,6 +12,7 @@
 #import "MineViewController.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 #import "Location.h"
+#import "Notification.h"
 //#import "FlowLayoutViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -49,6 +50,8 @@
     
     //定位
     [[Location locationManager] checkLocationAuthorization];
+    //推送
+    [[Notification notificationManager] checkNotificationAuthorization];
     
 	return YES;
 }
