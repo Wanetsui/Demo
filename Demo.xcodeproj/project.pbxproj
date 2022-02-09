@@ -12,7 +12,6 @@
 		3A6A798127931AFF00557C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A797F27931AFF00557C7F /* Main.storyboard */; };
 		3A6A798427931AFF00557C7F /* Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A798227931AFF00557C7F /* Demo.xcdatamodeld */; };
 		3A6A798627931B0000557C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A798527931B0000557C7F /* Assets.xcassets */; };
-		3A6A798927931B0000557C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A798727931B0000557C7F /* LaunchScreen.storyboard */; };
 		3A6A798C27931B0000557C7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A798B27931B0000557C7F /* main.m */; };
 		3A6A799627931B0000557C7F /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A799527931B0000557C7F /* DemoTests.m */; };
 		3A6A79A027931B0000557C7F /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A799F27931B0000557C7F /* DemoUITests.m */; };
@@ -29,6 +28,7 @@
 		3A88FFF9279EAF21002FE367 /* ZFKSControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFF8279EAF21002FE367 /* ZFKSControlView.m */; };
 		3A88FFFC279EB10D002FE367 /* PreLoaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */; };
 		3A88FFFF279EB165002FE367 /* LayerAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */; };
+		3A91833A27B3990400E8F634 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91833927B3990400E8F634 /* SplashView.m */; };
 		3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96826B279957E400290C9D /* FlowLayoutViewController.m */; };
 		3A96827227998A8300290C9D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96827127998A8300290C9D /* CoverView.m */; };
 		3A9682752799993E00290C9D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682742799993E00290C9D /* ListLoader.m */; };
@@ -66,7 +66,6 @@
 		3A6A798027931AFF00557C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A6A798327931AFF00557C7F /* Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Demo.xcdatamodel; sourceTree = "<group>"; };
 		3A6A798527931B0000557C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A6A798827931B0000557C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6A798A27931B0000557C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6A798B27931B0000557C7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A6A799127931B0000557C7F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +97,8 @@
 		3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreLoaderModel.m; sourceTree = "<group>"; };
 		3A88FFFD279EB165002FE367 /* LayerAttributeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAttributeManager.h; sourceTree = "<group>"; };
 		3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAttributeManager.m; sourceTree = "<group>"; };
+		3A91833827B3990400E8F634 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
+		3A91833927B3990400E8F634 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
 		3A96826A279957E400290C9D /* FlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutViewController.h; sourceTree = "<group>"; };
 		3A96826B279957E400290C9D /* FlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutViewController.m; sourceTree = "<group>"; };
 		3A96827027998A8300290C9D /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 		3A6A797527931AFF00557C7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A91833727B398B100E8F634 /* Utils */,
 				3A982AF9279FAA34004B3444 /* icon.bundle */,
 				3A88FFEC279EA94A002FE367 /* Player */,
 				3A968281279AC06900290C9D /* View */,
@@ -192,7 +194,6 @@
 				3A6A797727931AFF00557C7F /* AppDelegate.m */,
 				3A6A797F27931AFF00557C7F /* Main.storyboard */,
 				3A6A798527931B0000557C7F /* Assets.xcassets */,
-				3A6A798727931B0000557C7F /* LaunchScreen.storyboard */,
 				3A6A798A27931B0000557C7F /* Info.plist */,
 				3A6A798B27931B0000557C7F /* main.m */,
 				3A6A798227931AFF00557C7F /* Demo.xcdatamodeld */,
@@ -233,6 +234,15 @@
 				3A982AFC279FAB94004B3444 /* PlayerToolbar.m */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		3A91833727B398B100E8F634 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A91833827B3990400E8F634 /* SplashView.h */,
+				3A91833927B3990400E8F634 /* SplashView.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3A96827F279ABFEE00290C9D /* Model */ = {
@@ -402,7 +412,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A982AFA279FAA34004B3444 /* icon.bundle in Resources */,
-				3A6A798927931B0000557C7F /* LaunchScreen.storyboard in Resources */,
 				3A6A798627931B0000557C7F /* Assets.xcassets in Resources */,
 				3A6A798127931AFF00557C7F /* Main.storyboard in Resources */,
 				3A880006279EBB7D002FE367 /* data.json in Resources */,
@@ -520,6 +529,7 @@
 				3A9682782799995200290C9D /* ListItem.m in Sources */,
 				3A88FFF9279EAF21002FE367 /* ZFKSControlView.m in Sources */,
 				3A9682752799993E00290C9D /* ListLoader.m in Sources */,
+				3A91833A27B3990400E8F634 /* SplashView.m in Sources */,
 				3A6A797827931AFF00557C7F /* AppDelegate.m in Sources */,
 				3A88FFE2279E9FE4002FE367 /* WaterFallLayout.m in Sources */,
 				3A6A798427931AFF00557C7F /* Demo.xcdatamodeld in Sources */,
@@ -580,14 +590,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 			usesTabs = 0;
-		};
-		3A6A798727931B0000557C7F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A6A798827931B0000557C7F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
@@ -710,14 +712,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XG3ZW459W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -739,14 +744,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XG3ZW459W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
