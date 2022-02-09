@@ -11,6 +11,7 @@
 #import "SplashView.h"
 #import "MineViewController.h"
 #import <TencentOpenAPI/TencentOAuth.h>
+#import "Location.h"
 //#import "FlowLayoutViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -45,6 +46,9 @@
         SplashView *splashView = [[SplashView alloc] initWithFrame:self.window.bounds];
         splashView;
     })];
+    
+    //定位
+    [[Location locationManager] checkLocationAuthorization];
     
 	return YES;
 }

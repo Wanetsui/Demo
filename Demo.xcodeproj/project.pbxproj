@@ -32,6 +32,7 @@
 		3A91833D27B3A1E400E8F634 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91833C27B3A1E400E8F634 /* TencentOpenAPI.framework */; };
 		3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834027B3A2AE00E8F634 /* MineViewController.m */; };
 		3A91834427B3A2DE00E8F634 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834327B3A2DE00E8F634 /* Login.m */; };
+		3A91834727B3A7EB00E8F634 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834627B3A7EB00E8F634 /* Location.m */; };
 		3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96826B279957E400290C9D /* FlowLayoutViewController.m */; };
 		3A96827227998A8300290C9D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96827127998A8300290C9D /* CoverView.m */; };
 		3A9682752799993E00290C9D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682742799993E00290C9D /* ListLoader.m */; };
@@ -107,6 +108,8 @@
 		3A91834027B3A2AE00E8F634 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		3A91834227B3A2DE00E8F634 /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		3A91834327B3A2DE00E8F634 /* Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		3A91834527B3A7EB00E8F634 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		3A91834627B3A7EB00E8F634 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		3A96826A279957E400290C9D /* FlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutViewController.h; sourceTree = "<group>"; };
 		3A96826B279957E400290C9D /* FlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutViewController.m; sourceTree = "<group>"; };
 		3A96827027998A8300290C9D /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 			children = (
 				3A91833827B3990400E8F634 /* SplashView.h */,
 				3A91833927B3990400E8F634 /* SplashView.m */,
+				3A91834527B3A7EB00E8F634 /* Location.h */,
+				3A91834627B3A7EB00E8F634 /* Location.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 				3A88FFE5279EA7DC002FE367 /* WaterFallLayoutViewController.m in Sources */,
 				3A88FFFF279EB165002FE367 /* LayerAttributeManager.m in Sources */,
 				3A88FFE8279EA856002FE367 /* WaterFallCollectionViewCell.m in Sources */,
+				3A91834727B3A7EB00E8F634 /* Location.m in Sources */,
 				3A88FFF0279EAB89002FE367 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
