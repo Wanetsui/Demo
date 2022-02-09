@@ -34,6 +34,7 @@
 		3A91834427B3A2DE00E8F634 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834327B3A2DE00E8F634 /* Login.m */; };
 		3A91834727B3A7EB00E8F634 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834627B3A7EB00E8F634 /* Location.m */; };
 		3A91834A27B3B5C800E8F634 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834927B3B5C800E8F634 /* Notification.m */; };
+		3A91834C27B3B94B00E8F634 /* AlternateIcons in Resources */ = {isa = PBXBuildFile; fileRef = 3A91834B27B3B94B00E8F634 /* AlternateIcons */; };
 		3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96826B279957E400290C9D /* FlowLayoutViewController.m */; };
 		3A96827227998A8300290C9D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96827127998A8300290C9D /* CoverView.m */; };
 		3A9682752799993E00290C9D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682742799993E00290C9D /* ListLoader.m */; };
@@ -113,6 +114,7 @@
 		3A91834627B3A7EB00E8F634 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		3A91834827B3B5C800E8F634 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
 		3A91834927B3B5C800E8F634 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		3A91834B27B3B94B00E8F634 /* AlternateIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AlternateIcons; sourceTree = "<group>"; };
 		3A96826A279957E400290C9D /* FlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutViewController.h; sourceTree = "<group>"; };
 		3A96826B279957E400290C9D /* FlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutViewController.m; sourceTree = "<group>"; };
 		3A96827027998A8300290C9D /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		3A6A797527931AFF00557C7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A91834B27B3B94B00E8F634 /* AlternateIcons */,
 				3A91833E27B3A27E00E8F634 /* MineController */,
 				3A91833B27B3A1AE00E8F634 /* Framework */,
 				3A91833727B398B100E8F634 /* Utils */,
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A982AFA279FAA34004B3444 /* icon.bundle in Resources */,
+				3A91834C27B3B94B00E8F634 /* AlternateIcons in Resources */,
 				3A6A798627931B0000557C7F /* Assets.xcassets in Resources */,
 				3A6A798127931AFF00557C7F /* Main.storyboard in Resources */,
 				3A880006279EBB7D002FE367 /* data.json in Resources */,
@@ -766,11 +770,12 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要您提供位置信息";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -782,7 +787,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.wanying.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -802,11 +807,12 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要您提供位置信息";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -818,7 +824,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.wanying.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

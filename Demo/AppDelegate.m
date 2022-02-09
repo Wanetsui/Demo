@@ -68,6 +68,17 @@
     return YES;
 }
 
+
+
+//- (void)_changeIcon{
+//    //动态更换图标
+//    if ([UIApplication sharedApplication].supportsAlternateIcons) {
+//        [[UIApplication sharedApplication] setAlternateIconName:@"ICONBLACK" completionHandler:^(NSError * _Nullable error) {
+//            //回调
+//        }];
+//    }
+//}
+
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
 //    NSLog(@"did select");
 }
