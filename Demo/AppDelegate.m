@@ -9,6 +9,8 @@
 #import "WaterFallLayoutViewController.h"
 #import "FlowLayoutViewController.h"
 #import "SplashView.h"
+#import "MineViewController.h"
+#import <TencentOpenAPI/TencentOAuth.h>
 //#import "FlowLayoutViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -29,11 +31,7 @@
 	flowLayoutController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
 	flowLayoutController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/video_selected@2x.png"];
 
-	UIViewController *mineViewController = [[UIViewController alloc] init];
-	mineViewController.view.backgroundColor = [UIColor blueColor];
-	mineViewController.tabBarItem.title = @"朋友圈";
-	mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-	mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    MineViewController *mineViewController = [[MineViewController alloc] init];
 
 	[tabbarController setViewControllers:@[flowLayoutController,mineViewController]];
 
@@ -49,6 +47,18 @@
     })];
     
 	return YES;
+}
+
+#pragma mark - URL SCHEME
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
+    
+    if (YES == [TencentOAuth CanHandleOpenURL:url]) {
+        return [TencentOAuth HandleOpenURL:url];
+    }
+    return NO;
+    //处理通过SCHEME拉起的url 自定义业务逻辑
+    return YES;
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
