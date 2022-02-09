@@ -33,6 +33,7 @@
 		3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834027B3A2AE00E8F634 /* MineViewController.m */; };
 		3A91834427B3A2DE00E8F634 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834327B3A2DE00E8F634 /* Login.m */; };
 		3A91834727B3A7EB00E8F634 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834627B3A7EB00E8F634 /* Location.m */; };
+		3A91834A27B3B5C800E8F634 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91834927B3B5C800E8F634 /* Notification.m */; };
 		3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96826B279957E400290C9D /* FlowLayoutViewController.m */; };
 		3A96827227998A8300290C9D /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96827127998A8300290C9D /* CoverView.m */; };
 		3A9682752799993E00290C9D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682742799993E00290C9D /* ListLoader.m */; };
@@ -110,6 +111,8 @@
 		3A91834327B3A2DE00E8F634 /* Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		3A91834527B3A7EB00E8F634 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		3A91834627B3A7EB00E8F634 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		3A91834827B3B5C800E8F634 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		3A91834927B3B5C800E8F634 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
 		3A96826A279957E400290C9D /* FlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayoutViewController.h; sourceTree = "<group>"; };
 		3A96826B279957E400290C9D /* FlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutViewController.m; sourceTree = "<group>"; };
 		3A96827027998A8300290C9D /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 				3A91833927B3990400E8F634 /* SplashView.m */,
 				3A91834527B3A7EB00E8F634 /* Location.h */,
 				3A91834627B3A7EB00E8F634 /* Location.m */,
+				3A91834827B3B5C800E8F634 /* Notification.h */,
+				3A91834927B3B5C800E8F634 /* Notification.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				3A91833A27B3990400E8F634 /* SplashView.m in Sources */,
 				3A91834427B3A2DE00E8F634 /* Login.m in Sources */,
 				3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */,
+				3A91834A27B3B5C800E8F634 /* Notification.m in Sources */,
 				3A6A797827931AFF00557C7F /* AppDelegate.m in Sources */,
 				3A88FFE2279E9FE4002FE367 /* WaterFallLayout.m in Sources */,
 				3A6A798427931AFF00557C7F /* Demo.xcdatamodeld in Sources */,
