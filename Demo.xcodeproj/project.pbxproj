@@ -40,6 +40,15 @@
 		3A9682782799995200290C9D /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9682772799995200290C9D /* ListItem.m */; };
 		3A982AFA279FAA34004B3444 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A982AF9279FAA34004B3444 /* icon.bundle */; };
 		3A982AFD279FAB94004B3444 /* PlayerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A982AFC279FAB94004B3444 /* PlayerToolbar.m */; };
+		3AA9B62827B4B99E003912F1 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B62727B4B99E003912F1 /* NSString+Size.m */; };
+		3AA9B62C27B4BA4C003912F1 /* UIView+QJLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B62B27B4BA4C003912F1 /* UIView+QJLayout.m */; };
+		3AA9B63027B4BABF003912F1 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B62F27B4BABF003912F1 /* CommentView.m */; };
+		3AA9B63327B4BBBD003912F1 /* CommentListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63227B4BBBD003912F1 /* CommentListView.m */; };
+		3AA9B63627B4BBD6003912F1 /* CommentToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63527B4BBD6003912F1 /* CommentToolView.m */; };
+		3AA9B63927B4BD82003912F1 /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63827B4BD82003912F1 /* PlaceholderTextView.m */; };
+		3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */; };
+		3AA9B64227B4BF4E003912F1 /* CommentListContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */; };
+		3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */; };
 		3AC4ED8927A0263700D5802B /* LayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4ED8827A0263700D5802B /* LayoutConstraint.m */; };
 		52176008C14DAA5F278ABC3C /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CC01340FD2AE2FD9F0CA8 /* libPods-DemoTests.a */; };
 		9C8E90EBD5AFC54ED5DDFB57 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190ECAB4EF498908288A661 /* libPods-Demo.a */; };
@@ -124,6 +133,26 @@
 		3A982AF9279FAA34004B3444 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		3A982AFB279FAB94004B3444 /* PlayerToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerToolbar.h; sourceTree = "<group>"; };
 		3A982AFC279FAB94004B3444 /* PlayerToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerToolbar.m; sourceTree = "<group>"; };
+		3AA9B62527B4B86C003912F1 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		3AA9B62627B4B8C4003912F1 /* colorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = colorDefine.h; sourceTree = "<group>"; };
+		3AA9B62727B4B99E003912F1 /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		3AA9B62927B4B9C8003912F1 /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		3AA9B62A27B4BA4C003912F1 /* UIView+QJLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+QJLayout.h"; sourceTree = "<group>"; };
+		3AA9B62B27B4BA4C003912F1 /* UIView+QJLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+QJLayout.m"; sourceTree = "<group>"; };
+		3AA9B62E27B4BABF003912F1 /* CommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		3AA9B62F27B4BABF003912F1 /* CommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		3AA9B63127B4BBBD003912F1 /* CommentListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListView.h; sourceTree = "<group>"; };
+		3AA9B63227B4BBBD003912F1 /* CommentListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListView.m; sourceTree = "<group>"; };
+		3AA9B63427B4BBD6003912F1 /* CommentToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentToolView.h; sourceTree = "<group>"; };
+		3AA9B63527B4BBD6003912F1 /* CommentToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentToolView.m; sourceTree = "<group>"; };
+		3AA9B63727B4BD82003912F1 /* PlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		3AA9B63827B4BD82003912F1 /* PlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
+		3AA9B63A27B4BF10003912F1 /* CommentListTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListTableHeaderView.h; sourceTree = "<group>"; };
+		3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListTableHeaderView.m; sourceTree = "<group>"; };
+		3AA9B64027B4BF4E003912F1 /* CommentListContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListContentCell.h; sourceTree = "<group>"; };
+		3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListContentCell.m; sourceTree = "<group>"; };
+		3AA9B64327B4BF77003912F1 /* CommentListReplyContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListReplyContentCell.h; sourceTree = "<group>"; };
+		3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListReplyContentCell.m; sourceTree = "<group>"; };
 		3AC4ED8727A0263700D5802B /* LayoutConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutConstraint.h; sourceTree = "<group>"; };
 		3AC4ED8827A0263700D5802B /* LayoutConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraint.m; sourceTree = "<group>"; };
 		3C25914B57B139F077FF329C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +228,8 @@
 		3A6A797527931AFF00557C7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3AA9B62D27B4BA9B003912F1 /* CommentDetail */,
+				3AA9B62427B4B737003912F1 /* Common */,
 				3A91833E27B3A27E00E8F634 /* MineController */,
 				3A91833B27B3A1AE00E8F634 /* Framework */,
 				3A91833727B398B100E8F634 /* Utils */,
@@ -329,6 +360,40 @@
 				3AC4ED8827A0263700D5802B /* LayoutConstraint.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3AA9B62427B4B737003912F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3AA9B62527B4B86C003912F1 /* PrefixHeader.h */,
+				3AA9B62627B4B8C4003912F1 /* colorDefine.h */,
+				3AA9B62927B4B9C8003912F1 /* NSString+Size.h */,
+				3AA9B62727B4B99E003912F1 /* NSString+Size.m */,
+				3AA9B62A27B4BA4C003912F1 /* UIView+QJLayout.h */,
+				3AA9B62B27B4BA4C003912F1 /* UIView+QJLayout.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3AA9B62D27B4BA9B003912F1 /* CommentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3AA9B62E27B4BABF003912F1 /* CommentView.h */,
+				3AA9B62F27B4BABF003912F1 /* CommentView.m */,
+				3AA9B63127B4BBBD003912F1 /* CommentListView.h */,
+				3AA9B63227B4BBBD003912F1 /* CommentListView.m */,
+				3AA9B63427B4BBD6003912F1 /* CommentToolView.h */,
+				3AA9B63527B4BBD6003912F1 /* CommentToolView.m */,
+				3AA9B63727B4BD82003912F1 /* PlaceholderTextView.h */,
+				3AA9B63827B4BD82003912F1 /* PlaceholderTextView.m */,
+				3AA9B63A27B4BF10003912F1 /* CommentListTableHeaderView.h */,
+				3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */,
+				3AA9B64027B4BF4E003912F1 /* CommentListContentCell.h */,
+				3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */,
+				3AA9B64327B4BF77003912F1 /* CommentListReplyContentCell.h */,
+				3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */,
+			);
+			path = CommentDetail;
 			sourceTree = "<group>";
 		};
 		693DD41AE0821F8286C4B7EE /* Pods */ = {
@@ -566,9 +631,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6A798C27931B0000557C7F /* main.m in Sources */,
+				3AA9B63927B4BD82003912F1 /* PlaceholderTextView.m in Sources */,
 				3A9682782799995200290C9D /* ListItem.m in Sources */,
 				3A88FFF9279EAF21002FE367 /* ZFKSControlView.m in Sources */,
 				3A9682752799993E00290C9D /* ListLoader.m in Sources */,
+				3AA9B64227B4BF4E003912F1 /* CommentListContentCell.m in Sources */,
 				3A91833A27B3990400E8F634 /* SplashView.m in Sources */,
 				3A91834427B3A2DE00E8F634 /* Login.m in Sources */,
 				3A91834127B3A2AE00E8F634 /* MineViewController.m in Sources */,
@@ -579,12 +646,19 @@
 				3A96826C279957E400290C9D /* FlowLayoutViewController.m in Sources */,
 				3A88FFF6279EAE0D002FE367 /* ZFKSCell.m in Sources */,
 				3A982AFD279FAB94004B3444 /* PlayerToolbar.m in Sources */,
+				3AA9B63627B4BBD6003912F1 /* CommentToolView.m in Sources */,
+				3AA9B62827B4B99E003912F1 /* NSString+Size.m in Sources */,
 				3A96827227998A8300290C9D /* CoverView.m in Sources */,
+				3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */,
 				3A88FFFC279EB10D002FE367 /* PreLoaderModel.m in Sources */,
 				3AC4ED8927A0263700D5802B /* LayoutConstraint.m in Sources */,
 				3A88FFEB279EA912002FE367 /* ZFTableData.m in Sources */,
 				3A880002279EB704002FE367 /* Transition.m in Sources */,
+				3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */,
+				3AA9B63327B4BBBD003912F1 /* CommentListView.m in Sources */,
+				3AA9B62C27B4BA4C003912F1 /* UIView+QJLayout.m in Sources */,
 				3A88FFF3279EAD03002FE367 /* PlayerController.m in Sources */,
+				3AA9B63027B4BABF003912F1 /* CommentView.m in Sources */,
 				3A88FFE5279EA7DC002FE367 /* WaterFallLayoutViewController.m in Sources */,
 				3A88FFFF279EB165002FE367 /* LayerAttributeManager.m in Sources */,
 				3A88FFE8279EA856002FE367 /* WaterFallCollectionViewCell.m in Sources */,
