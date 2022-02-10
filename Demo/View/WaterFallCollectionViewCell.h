@@ -17,6 +17,4 @@
 @property (nonatomic, strong) ZFTableData *data;
 @property (nonatomic, strong) UIButton *likeBtn;
 
-//@property (nonatomic, strong) LayoutConstraint *layoutConstraint;
-
 @end

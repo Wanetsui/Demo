@@ -16,7 +16,6 @@
 		3A6A799627931B0000557C7F /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A799527931B0000557C7F /* DemoTests.m */; };
 		3A6A79A027931B0000557C7F /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A799F27931B0000557C7F /* DemoUITests.m */; };
 		3A6A79A227931B0000557C7F /* DemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A79A127931B0000557C7F /* DemoUITestsLaunchTests.m */; };
-		3A880002279EB704002FE367 /* Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A880001279EB704002FE367 /* Transition.m */; };
 		3A880006279EBB7D002FE367 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A880005279EBB7D002FE367 /* data.json */; };
 		3A88FFE2279E9FE4002FE367 /* WaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFE1279E9FE4002FE367 /* WaterFallLayout.m */; };
 		3A88FFE5279EA7DC002FE367 /* WaterFallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFE4279EA7DC002FE367 /* WaterFallLayoutViewController.m */; };
@@ -26,7 +25,6 @@
 		3A88FFF3279EAD03002FE367 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFF2279EAD03002FE367 /* PlayerController.m */; };
 		3A88FFF6279EAE0D002FE367 /* ZFKSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFF5279EAE0D002FE367 /* ZFKSCell.m */; };
 		3A88FFF9279EAF21002FE367 /* ZFKSControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFF8279EAF21002FE367 /* ZFKSControlView.m */; };
-		3A88FFFC279EB10D002FE367 /* PreLoaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */; };
 		3A88FFFF279EB165002FE367 /* LayerAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */; };
 		3A91833A27B3990400E8F634 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A91833927B3990400E8F634 /* SplashView.m */; };
 		3A91833D27B3A1E400E8F634 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A91833C27B3A1E400E8F634 /* TencentOpenAPI.framework */; };
@@ -87,8 +85,6 @@
 		3A6A799B27931B0000557C7F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6A799F27931B0000557C7F /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		3A6A79A127931B0000557C7F /* DemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		3A880000279EB704002FE367 /* Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transition.h; sourceTree = "<group>"; };
-		3A880001279EB704002FE367 /* Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transition.m; sourceTree = "<group>"; };
 		3A880005279EBB7D002FE367 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3A88FFE0279E9FE4002FE367 /* WaterFallLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallLayout.h; sourceTree = "<group>"; };
 		3A88FFE1279E9FE4002FE367 /* WaterFallLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallLayout.m; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 		3A88FFF5279EAE0D002FE367 /* ZFKSCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFKSCell.m; sourceTree = "<group>"; };
 		3A88FFF7279EAF21002FE367 /* ZFKSControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFKSControlView.h; sourceTree = "<group>"; };
 		3A88FFF8279EAF21002FE367 /* ZFKSControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFKSControlView.m; sourceTree = "<group>"; };
-		3A88FFFA279EB10D002FE367 /* PreLoaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreLoaderModel.h; sourceTree = "<group>"; };
-		3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreLoaderModel.m; sourceTree = "<group>"; };
 		3A88FFFD279EB165002FE367 /* LayerAttributeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerAttributeManager.h; sourceTree = "<group>"; };
 		3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerAttributeManager.m; sourceTree = "<group>"; };
 		3A91833827B3990400E8F634 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
@@ -269,14 +263,10 @@
 		3A88FFEC279EA94A002FE367 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				3A880000279EB704002FE367 /* Transition.h */,
-				3A880001279EB704002FE367 /* Transition.m */,
 				3A88FFFD279EB165002FE367 /* LayerAttributeManager.h */,
 				3A88FFFE279EB165002FE367 /* LayerAttributeManager.m */,
 				3A88FFF1279EAD03002FE367 /* PlayerController.h */,
 				3A88FFF2279EAD03002FE367 /* PlayerController.m */,
-				3A88FFFA279EB10D002FE367 /* PreLoaderModel.h */,
-				3A88FFFB279EB10D002FE367 /* PreLoaderModel.m */,
 				3A88FFED279EA99F002FE367 /* PlayableProtocol.h */,
 				3A982AFB279FAB94004B3444 /* PlayerToolbar.h */,
 				3A982AFC279FAB94004B3444 /* PlayerToolbar.m */,
@@ -323,11 +313,11 @@
 				3A88FFE1279E9FE4002FE367 /* WaterFallLayout.m */,
 				3A88FFE9279EA912002FE367 /* ZFTableData.h */,
 				3A88FFEA279EA912002FE367 /* ZFTableData.m */,
-				3A880005279EBB7D002FE367 /* data.json */,
 				3A9682732799993E00290C9D /* ListLoader.h */,
 				3A9682742799993E00290C9D /* ListLoader.m */,
 				3A9682762799995200290C9D /* ListItem.h */,
 				3A9682772799995200290C9D /* ListItem.m */,
+				3A880005279EBB7D002FE367 /* data.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -650,10 +640,8 @@
 				3AA9B62827B4B99E003912F1 /* NSString+Size.m in Sources */,
 				3A96827227998A8300290C9D /* CoverView.m in Sources */,
 				3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */,
-				3A88FFFC279EB10D002FE367 /* PreLoaderModel.m in Sources */,
 				3AC4ED8927A0263700D5802B /* LayoutConstraint.m in Sources */,
 				3A88FFEB279EA912002FE367 /* ZFTableData.m in Sources */,
-				3A880002279EB704002FE367 /* Transition.m in Sources */,
 				3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */,
 				3AA9B63327B4BBBD003912F1 /* CommentListView.m in Sources */,
 				3AA9B62C27B4BA4C003912F1 /* UIView+QJLayout.m in Sources */,

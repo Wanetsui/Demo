@@ -10,7 +10,6 @@
 #import "ZFKSControlView.h"
 #import <ZFPlayer.h>
 #import <ZFPlayerControlView.h>
-#import "Transition.h"
 
 static NSString *kIdentifier = @"kIdentifier";
 
@@ -258,16 +257,6 @@ static NSString *kIdentifier = @"kIdentifier";
 	_player = player;
 	self.preControlView = (ZFPlayerControlView *)player.controlView;
 	[self.preControlView removeFromSuperview];
-}
-
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-	if (self.startView == nil)
-		return nil;
-	if (self.playingIndexPath &&
-	    self.playingIndexPath.row != self.index)
-		return nil;
-	return [Transition animationWithDuration:0.3 startView:self.startView startImage:self.startImage player:self.player operation:operation completion:^{
-		}];
 }
 
 

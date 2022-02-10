@@ -8,14 +8,12 @@
 #import "PlayerController.h"
 #import "LayerAttributeManager.h"
 #import <KTVHTTPCache.h>
-#import "PreLoaderModel.h"
 #import <ZFUtilities.h>
 
 @interface PlayerController ()<KTVHCDataLoaderDelegate>
 
 @property (nonatomic, strong) ZFPlayerController *player;
-/// 预加载的模型数组
-@property (nonatomic, strong) NSMutableArray<PreLoaderModel *> *preloadArr;
+
 @property (nonatomic, assign) BOOL isAnimating;
 @property (nonatomic, assign) UIInterfaceOrientation orientation;
 
@@ -95,18 +93,6 @@
 - (void)stopCurrentPlayingCell
 {
 	[self.player stopCurrentPlayingCell];
-}
-
-- (void)playTheIndexPath:(NSIndexPath *)indexPath playable: (id<XSTPlayable>)playable
-{
-	// 播放前，先停止所有的预加载任务
-	[self cancelAllPreload];
-	_currentPlayable = playable;
-	[self.player playTheIndexPath:indexPath assetURL:[NSURL URLWithString:playable.video_url] scrollToTop:NO];
-	__weak typeof(self) weakSelf = self;
-	self.playerReadyToPlay = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, NSURL * _Nonnull assetURL) {
-		[weakSelf preload: playable];
-	};
 }
 
 - (void)playWithPlayable: (id<XSTPlayable>)playable
@@ -195,135 +181,9 @@
 	[self.player addPlayerViewToContainerView:containerView];
 }
 
-// MARK: - Preload
-/// 根据传入的模型，预加载上几个，下几个的视频
-- (void)preload: (id<XSTPlayable>)resource
-{
-	if (self.playableArray.count <= 1)
-		return;
-	if (_nextLoadNum == 0 && _preLoadNum == 0)
-		return;
-	NSInteger start = [self.playableArray indexOfObject:resource];
-	if (start == NSNotFound)
-		return;
-	[self cancelAllPreload];
-	NSInteger index = 0;
-	for (NSInteger i = start + 1; i < self.playableArray.count && index < _nextLoadNum; i++)
-	{
-		index += 1;
-		id<XSTPlayable> model = self.playableArray[i];
-		PreLoaderModel *preModel = [self getPreloadModel: model.video_url];
-		if (preModel) {
-			@synchronized (self.preloadArr) {
-				[self.preloadArr addObject: preModel];
-			}
-		}
-	}
-	index = 0;
-	for (NSInteger i = start - 1; i >= 0 && index < _preLoadNum; i--)
-	{
-		index += 1;
-		id<XSTPlayable> model = self.playableArray[i];
-		PreLoaderModel *preModel = [self getPreloadModel: model.video_url];
-		if (preModel) {
-			@synchronized (self.preloadArr) {
-				[self.preloadArr addObject:preModel];
-			}
-		}
-	}
-	[self processLoader];
-}
-
-/// 取消所有的预加载
-- (void)cancelAllPreload
-{
-	@synchronized (self.preloadArr) {
-		if (self.preloadArr.count == 0)
-		{
-			return;
-		}
-		[self.preloadArr enumerateObjectsUsingBlock:^(PreLoaderModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-		         [obj.loader close];
-		 }];
-		[self.preloadArr removeAllObjects];
-	}
-}
-
-- (PreLoaderModel *)getPreloadModel: (NSString *)urlStr
-{
-	if (!urlStr)
-		return nil;
-	// 判断是否已在队列中
-	__block Boolean res = NO;
-	@synchronized (self.preloadArr) {
-		[self.preloadArr enumerateObjectsUsingBlock:^(PreLoaderModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-		         if ([obj.url isEqualToString:urlStr])
-			 {
-				 res = YES;
-				 *stop = YES;
-			 }
-		 }];
-	}
-	if (res)
-		return nil;
-	NSURL *proxyUrl = [KTVHTTPCache proxyURLWithOriginalURL: [NSURL URLWithString:urlStr]];
-	KTVHCDataCacheItem *item = [KTVHTTPCache cacheCacheItemWithURL:proxyUrl];
-	double cachePrecent = 1.0 * item.cacheLength / item.totalLength;
-	// 判断缓存已经超过10%了
-	if (cachePrecent >= self.preloadPrecent)
-		return nil;
-	KTVHCDataRequest *req = [[KTVHCDataRequest alloc] initWithURL:proxyUrl headers:[NSDictionary dictionary]];
-	KTVHCDataLoader *loader = [KTVHTTPCache cacheLoaderWithRequest:req];
-	PreLoaderModel *preModel = [[PreLoaderModel alloc] initWithURL:urlStr loader:loader];
-	return preModel;
-}
-
-- (void)processLoader
-{
-	@synchronized (self.preloadArr) {
-		if (self.preloadArr.count == 0)
-			return;
-		PreLoaderModel *model = self.preloadArr.firstObject;
-		model.loader.delegate = self;
-		[model.loader prepare];
-	}
-}
-
-/// 根据loader，移除预加载任务
-- (void)removePreloadTask: (KTVHCDataLoader *)loader
-{
-	@synchronized (self.preloadArr) {
-		PreLoaderModel *target = nil;
-		for (PreLoaderModel *model in self.preloadArr) {
-			if ([model.loader isEqual:loader])
-			{
-				target = model;
-				break;
-			}
-		}
-		if (target)
-			[self.preloadArr removeObject:target];
-	}
-}
-
 // MARK: - KTVHCDataLoaderDelegate
 - (void)ktv_loaderDidFinish:(KTVHCDataLoader *)loader
 {
-}
-- (void)ktv_loader:(KTVHCDataLoader *)loader didFailWithError:(NSError *)error
-{
-	// 若预加载失败的话，就直接移除任务，开始下一个预加载任务
-	[self removePreloadTask:loader];
-	[self processLoader];
-}
-- (void)ktv_loader:(KTVHCDataLoader *)loader didChangeProgress:(double)progress
-{
-	if (progress >= self.preloadPrecent)
-	{
-		[loader close];
-		[self removePreloadTask:loader];
-		[self processLoader];
-	}
 }
 
 // MARK: - Getter
@@ -337,14 +197,7 @@
 	return self.player.playingIndexPath;
 }
 
-- (NSMutableArray<PreLoaderModel *> *)preloadArr
-{
-	if (_preloadArr == nil)
-	{
-		_preloadArr = [NSMutableArray array];
-	}
-	return _preloadArr;
-}
+
 
 - (id<ZFPlayerMediaPlayback>)currentPlayerManager
 {
@@ -381,29 +234,6 @@
 	return _player.playerDisapperaPercent;
 }
 
-
-// MARK: - Setter
-- (void)setPlayableArray:(NSArray<id<XSTPlayable> > *)playableArray
-{
-	_playableArray = playableArray;
-	[self cancelAllPreload];
-	// 默认预加载前几条数据
-	NSRange range = NSMakeRange(0, _initPreloadNum);
-	if (range.length > playableArray.count) {
-		range.length = playableArray.count;
-	}
-	NSArray *subArr = [playableArray subarrayWithRange: range];
-	for (id<XSTPlayable> model in subArr)
-	{
-		PreLoaderModel *preload = [self getPreloadModel:model.video_url];
-		if (preload) {
-			@synchronized (self.preloadArr) {
-				[self.preloadArr addObject: preload];
-			}
-		}
-	}
-	[self processLoader];
-}
 
 - (void)setWWANAutoPlay:(BOOL)WWANAutoPlay
 {

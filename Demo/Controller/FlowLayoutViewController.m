@@ -53,7 +53,6 @@
 	         __strong typeof(wself) strongSelf = wself;
 	         strongSelf.dataArray = dataArray;
 	         [strongSelf.collectionView reloadData];
-//        [strongSelf.collectionView reloadItemsAtIndexPaths:[self.collectionView indexPathsForVisibleItems]];
 	 }];
 }
 

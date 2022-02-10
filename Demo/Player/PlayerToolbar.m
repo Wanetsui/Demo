@@ -63,45 +63,10 @@
 			_commentLabel;
 		})];
 
-//        [self addSubview:({
-//            _likeImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-//            _likeImageView.layer.masksToBounds = YES;
-//            _likeImageView.layer.cornerRadius = 15;
-//            _likeImageView.translatesAutoresizingMaskIntoConstraints = NO;
-//
-//            _likeImageView;
-//        })];
-//        [self addSubview:({
-//            _likeLabel = [[UILabel alloc] init];
-//            _likeLabel.font = [UIFont systemFontOfSize:15];
-//            _likeLabel.textColor = [UIColor blackColor];
-//            _likeLabel.translatesAutoresizingMaskIntoConstraints = NO;
-//
-//            _likeLabel;
-//        })];
-//
-//        [self addSubview:({
-//            _shareImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-//            _shareImageView.layer.masksToBounds = YES;
-//            _shareImageView.layer.cornerRadius = 15;
-//            _shareImageView.translatesAutoresizingMaskIntoConstraints = NO;
-//            _shareImageView.contentMode = UIViewContentModeScaleToFill;
-//            _shareImageView;
-//        })];
-//
-//        [self addSubview:({
-//            _shareLabel = [[UILabel alloc] init];
-//            _shareLabel.font = [UIFont systemFontOfSize:15];
-//            _shareLabel.textColor = [UIColor blackColor];
-//            _shareLabel.translatesAutoresizingMaskIntoConstraints = NO;
-//            _shareLabel;
-//        })];
-
 
 		[self.layer addSublayer:({
 			CALayer *bottomLine = [[CALayer alloc] init];
-//            bottomLine.frame = CGRectMake(0, frame.size.height - 0.5, [[UIScreen mainScreen ] bounds].size.width / 2, 0.5);
-//            bottomLine.backgroundColor = [UIColor blackColor].CGColor;
+
 			bottomLine;
 		})];
 	}
@@ -178,11 +143,9 @@
 		  constant:0],
 
 	]];
-
-//    NSString *vflString = @"H:|-5-[_avatorImageView]-0-[_nickLabel]-(>=0)-[_commentImageView(==_avatorImageView)]-0-[_commentLabel]-5-[_likeImageView(==_avatorImageView)]-0-[_likeLabel]-5-[_shareImageView(==_avatorImageView)]-0-[_shareLabel]-5-|";
+    
 	NSString *vflString = @"H:|-2-[_avatorImageView]-0-[_nickLabel]-(>=0)-[_commentImageView(==_avatorImageView)]-0-[_commentLabel]-2-|";
-
-//    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vflString options:NSLayoutFormatAlignAllCenterY metrics:nil views:NSDictionaryOfVariableBindings(_avatorImageView, _nickLabel, _commentImageView, _commentLabel, _likeImageView, _likeLabel, _shareImageView, _shareLabel)]];
+    
 	[NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vflString options:NSLayoutFormatAlignAllCenterY metrics:nil views:NSDictionaryOfVariableBindings(_avatorImageView, _nickLabel, _commentImageView, _commentLabel)]];
 
 }
