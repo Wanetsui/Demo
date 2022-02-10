@@ -13,7 +13,6 @@
 #define STATUS_BAR_HEIGHT CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
 #define NAV_BAR_HEIGHT 74
 #define STATUS_AND_NAV_BAR_HEIGHT (STATUS_BAR_HEIGHT + NAV_BAR_HEIGHT)
-//iPhone X底部边距
 #define SAFE_AREA_BOTTOM (STATUS_BAR_HEIGHT > 25 ? 34.0 : 0.0)
 
 // block

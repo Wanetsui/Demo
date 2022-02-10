@@ -27,8 +27,6 @@
 	self.imageView = [[UIImageView alloc] init];
 	[self.contentView addSubview:self.imageView];
     
-//    [self.contentView addSubview:self.layoutConstraint];
-//    _layoutConstraint;
 }
 
 - (void)layoutSubviews
