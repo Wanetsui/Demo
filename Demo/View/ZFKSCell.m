@@ -10,6 +10,7 @@
 #import <ZFPlayer/UIImageView+ZFCache.h>
 #import <ZFPlayer/ZFUtilities.h>
 #import "ZFLoadingView.h"
+#import "CommentView.h"
 
 @interface ZFKSCell ()
 
@@ -109,6 +110,7 @@
 	if (!_commentBtn) {
 		_commentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 		[_commentBtn setImage:[UIImage imageNamed:@"comment"] forState:UIControlStateNormal];
+        [_commentBtn addTarget:self action:@selector(commentList) forControlEvents:UIControlEventTouchUpInside];
 	}
 	return _commentBtn;
 }
@@ -172,6 +174,10 @@
 		}
 	}
 	return _effectView;
+}
+
+- (void)commentList {
+    [[CommentManager shareManager] showCommentWithSourceId:nil];
 }
 
 @end
