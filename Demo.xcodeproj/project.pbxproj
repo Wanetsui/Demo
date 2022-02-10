@@ -47,7 +47,6 @@
 		3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */; };
 		3AA9B64227B4BF4E003912F1 /* CommentListContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */; };
 		3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */; };
-		3AC4ED8927A0263700D5802B /* LayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4ED8827A0263700D5802B /* LayoutConstraint.m */; };
 		52176008C14DAA5F278ABC3C /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CC01340FD2AE2FD9F0CA8 /* libPods-DemoTests.a */; };
 		9C8E90EBD5AFC54ED5DDFB57 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190ECAB4EF498908288A661 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
@@ -147,8 +146,6 @@
 		3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListContentCell.m; sourceTree = "<group>"; };
 		3AA9B64327B4BF77003912F1 /* CommentListReplyContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListReplyContentCell.h; sourceTree = "<group>"; };
 		3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListReplyContentCell.m; sourceTree = "<group>"; };
-		3AC4ED8727A0263700D5802B /* LayoutConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutConstraint.h; sourceTree = "<group>"; };
-		3AC4ED8827A0263700D5802B /* LayoutConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraint.m; sourceTree = "<group>"; };
 		3C25914B57B139F077FF329C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		4099C5357372E8AC1CA9DADE /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D22BE054CE07418790BABAB /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -346,8 +343,6 @@
 				3A88FFE7279EA856002FE367 /* WaterFallCollectionViewCell.m */,
 				3A88FFF4279EAE0D002FE367 /* ZFKSCell.h */,
 				3A88FFF5279EAE0D002FE367 /* ZFKSCell.m */,
-				3AC4ED8727A0263700D5802B /* LayoutConstraint.h */,
-				3AC4ED8827A0263700D5802B /* LayoutConstraint.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -640,7 +635,6 @@
 				3AA9B62827B4B99E003912F1 /* NSString+Size.m in Sources */,
 				3A96827227998A8300290C9D /* CoverView.m in Sources */,
 				3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */,
-				3AC4ED8927A0263700D5802B /* LayoutConstraint.m in Sources */,
 				3A88FFEB279EA912002FE367 /* ZFTableData.m in Sources */,
 				3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */,
 				3AA9B63327B4BBBD003912F1 /* CommentListView.m in Sources */,
