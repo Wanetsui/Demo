@@ -7,7 +7,6 @@
 
 #import "WaterFallCollectionViewCell.h"
 #import <ZFPlayer/UIImageView+ZFCache.h>
-
 #import <ZFPlayer/UIView+ZFFrame.h>
 
 @implementation WaterFallCollectionViewCell
@@ -68,6 +67,7 @@
 }
 
 - (UIButton *)likeBtn {
+    
     if (!_likeBtn) {
         _likeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_likeBtn setImage:[UIImage imageNamed:@"praise"] forState:UIControlStateNormal];

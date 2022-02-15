@@ -6,6 +6,7 @@ target ‘Demo’ do
     pod 'KTVHTTPCache'
     pod 'ZFPlayer/ControlView'
     pod 'Masonry'
+    pod 'lottie-ios', '~> 2.5.3'
 
       target 'DemoTests' do
         inherit! :search_paths
