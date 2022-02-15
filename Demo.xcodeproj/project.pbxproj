@@ -47,6 +47,8 @@
 		3AA9B63C27B4BF11003912F1 /* CommentListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */; };
 		3AA9B64227B4BF4E003912F1 /* CommentListContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */; };
 		3AA9B64527B4BF77003912F1 /* CommentListReplyContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */; };
+		3AA9B64927B65DA4003912F1 /* CommentListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA9B63B27B4BF10003912F1 /* CommentListTableHeaderView.m */; };
+		3AC0AFC127BB99A9004507F9 /* TwitterHeartAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AC0AFC027BB99A9004507F9 /* TwitterHeartAnimation.json */; };
 		52176008C14DAA5F278ABC3C /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CC01340FD2AE2FD9F0CA8 /* libPods-DemoTests.a */; };
 		9C8E90EBD5AFC54ED5DDFB57 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3190ECAB4EF498908288A661 /* libPods-Demo.a */; };
 /* End PBXBuildFile section */
@@ -146,6 +148,7 @@
 		3AA9B64127B4BF4E003912F1 /* CommentListContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListContentCell.m; sourceTree = "<group>"; };
 		3AA9B64327B4BF77003912F1 /* CommentListReplyContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListReplyContentCell.h; sourceTree = "<group>"; };
 		3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListReplyContentCell.m; sourceTree = "<group>"; };
+		3AC0AFC027BB99A9004507F9 /* TwitterHeartAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartAnimation.json; sourceTree = "<group>"; };
 		3C25914B57B139F077FF329C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		4099C5357372E8AC1CA9DADE /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D22BE054CE07418790BABAB /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,8 +222,8 @@
 		3A6A797527931AFF00557C7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				3AA9B62D27B4BA9B003912F1 /* CommentDetail */,
-				3AA9B62427B4B737003912F1 /* Common */,
+				3AC0AFB927BA394D004507F9 /* NewComment */,
+				3AC0AFB827BA3540004507F9 /* OldComment */,
 				3A91833E27B3A27E00E8F634 /* MineController */,
 				3A91833B27B3A1AE00E8F634 /* Framework */,
 				3A91833727B398B100E8F634 /* Utils */,
@@ -274,6 +277,7 @@
 		3A91833727B398B100E8F634 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3AC0AFC027BB99A9004507F9 /* TwitterHeartAnimation.json */,
 				3A91833827B3990400E8F634 /* SplashView.h */,
 				3A91833927B3990400E8F634 /* SplashView.m */,
 				3A91834527B3A7EB00E8F634 /* Location.h */,
@@ -379,6 +383,22 @@
 				3AA9B64427B4BF77003912F1 /* CommentListReplyContentCell.m */,
 			);
 			path = CommentDetail;
+			sourceTree = "<group>";
+		};
+		3AC0AFB827BA3540004507F9 /* OldComment */ = {
+			isa = PBXGroup;
+			children = (
+				3AA9B62D27B4BA9B003912F1 /* CommentDetail */,
+				3AA9B62427B4B737003912F1 /* Common */,
+			);
+			path = OldComment;
+			sourceTree = "<group>";
+		};
+		3AC0AFB927BA394D004507F9 /* NewComment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewComment;
 			sourceTree = "<group>";
 		};
 		693DD41AE0821F8286C4B7EE /* Pods */ = {
@@ -503,6 +523,7 @@
 			files = (
 				3A982AFA279FAA34004B3444 /* icon.bundle in Resources */,
 				3A6A798627931B0000557C7F /* Assets.xcassets in Resources */,
+				3AC0AFC127BB99A9004507F9 /* TwitterHeartAnimation.json in Resources */,
 				3A6A798127931AFF00557C7F /* Main.storyboard in Resources */,
 				3A880006279EBB7D002FE367 /* data.json in Resources */,
 			);
@@ -663,6 +684,7 @@
 			files = (
 				3A6A79A027931B0000557C7F /* DemoUITests.m in Sources */,
 				3A6A79A227931B0000557C7F /* DemoUITestsLaunchTests.m in Sources */,
+				3AA9B64927B65DA4003912F1 /* CommentListTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

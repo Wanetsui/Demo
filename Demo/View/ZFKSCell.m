@@ -10,7 +10,9 @@
 #import <ZFPlayer/UIImageView+ZFCache.h>
 #import <ZFPlayer/ZFUtilities.h>
 #import "ZFLoadingView.h"
-#import "CommentView.h"
+//#import "CommentView.h"
+
+#import <Lottie/Lottie.h>
 
 @interface ZFKSCell ()
 
@@ -30,6 +32,8 @@
 
 @property (nonatomic, strong) UIView *effectView;
 
+//@property (nonatomic, strong) LOTAnimationView *animation;
+
 @end
 
 @implementation ZFKSCell
@@ -45,8 +49,12 @@
 		[self.contentView addSubview:self.likeBtn];
 		[self.contentView addSubview:self.commentBtn];
 		[self.contentView addSubview:self.shareBtn];
-	}
+      }
 	return self;
+}
+
+- (void)switchToggled:(LOTAnimatedSwitch *)animatedSwitch {
+  NSLog(@"The switch is %@", (animatedSwitch.on ? @"ON" : @"OFF"));
 }
 
 - (void)layoutSubviews {
@@ -101,6 +109,7 @@
 	if (!_likeBtn) {
 		_likeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 		[_likeBtn setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
+        [_likeBtn addTarget:self action:@selector(likeAnmination) forControlEvents:UIControlEventTouchUpInside];
 	}
 	return _likeBtn;
 }
@@ -177,7 +186,18 @@
 }
 
 - (void)commentList {
-    [[CommentManager shareManager] showCommentWithSourceId:nil];
+    //old commentList example
+//    [[CommentManager shareManager] showCommentWithSourceId:nil];
 }
 
+- (void)likeAnmination {
+    LOTAnimationView *animation = [LOTAnimationView animationNamed:@"TwitterHeartAnimation"];
+    UIImage* image1=[UIImage imageNamed:@"like"];
+    animation.frame = CGRectMake(self.zf_width - 100, self.zf_width - 9, image1.size.width, image1.size.width);
+    [self.contentView addSubview:animation];
+    [animation playWithCompletion:^(BOOL animationFinished) {
+      // Do Something when finished
+    }];
+
+}
 @end

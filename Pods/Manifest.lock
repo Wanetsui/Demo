@@ -19,6 +19,7 @@ PODS:
     - CocoaAsyncSocket
   - KTVHTTPCache (2.0.1):
     - KTVCocoaHTTPServer
+  - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
@@ -32,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - KTVHTTPCache
+  - lottie-ios (~> 2.5.3)
   - Masonry
   - SDWebImage
   - ZFPlayer
@@ -43,6 +45,7 @@ SPEC REPOS:
     - CocoaAsyncSocket
     - KTVCocoaHTTPServer
     - KTVHTTPCache
+    - lottie-ios
     - Masonry
     - SDWebImage
     - ZFPlayer
@@ -52,10 +55,11 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   KTVCocoaHTTPServer: df8d7b861e603ff8037e9b2138aca2563a6b768d
   KTVHTTPCache: 588c3eb16f6bd1e6fde1e230dabfb7bd4e490a4d
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
   ZFPlayer: 624c92de06eb34df322c3b53b4c9ce760f528f7a
 
-PODFILE CHECKSUM: 219db045aa6a3729a637ea69d93c85f5a8089828
+PODFILE CHECKSUM: d33d5055fc8eadd80724dde889477f50b54cf2fa
 
 COCOAPODS: 1.11.2
